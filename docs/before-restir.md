@@ -32,6 +32,8 @@ Monte Carlo estimation; it tries to make each sample more useful.
 
 ### Importance Sampling And PDFs
 
+Recommended introductory YouTube video: [Importance Sampling](https://youtu.be/C3p2wI4RAi8?si=ppts6TSnLi3-EzAG)
+
 Importance sampling chooses samples from distributions that are likely to
 contribute more to the result. A probability density function, or PDF, describes
 how likely a sample is under a sampling strategy.
@@ -41,6 +43,8 @@ Those weights only make sense if you understand that estimators compensate for
 how samples were generated.
 
 ### Multiple Importance Sampling
+
+Recommended YouTube videos: [Multiple Importance Sampling](https://youtu.be/2S6imDIiFTM?si=tnRdkZ9fcCUOacKm), [Continuous Multiple Importance Sampling (SIGGRAPH 2020 Presentation)](https://youtu.be/dxFSwplfdpk?si=Qdn7x4HaFIDq4Mur)
 
 Multiple importance sampling, or MIS, combines samples from different strategies
 while reducing variance. In rendering, common strategies include sampling a
@@ -89,6 +93,8 @@ You are ready to start the original ReSTIR paper when you can explain:
 
 ## Starter Resources
 
+- [How Ray Tracing (Modern CGI) Works And How To Do It 600x Faster](https://youtu.be/gsZiJeaMO48?si=XdMNVhKHoliSgz7w)
+  - Friendly visual introduction to ray tracing and why ReSTIR is useful.
 - [Ray Tracing in One Weekend](https://raytracing.github.io/)
   - Practical first exposure to ray tracing and path tracing.
 - [Physically Based Rendering: From Theory to Implementation](https://pbr-book.org/)
