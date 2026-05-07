@@ -19,7 +19,7 @@ historical samples to raise the effective sample count without tracing many more
 rays.
 
 Before reading the ReSTIR papers, it helps to know the topics covered in
-[docs/before-restir.md](docs/before-restir.md):
+[notes/before-restir.md](notes/before-restir.md):
 
 - the rendering equation and Monte Carlo integration,
 - importance sampling and probability density functions,
@@ -31,7 +31,7 @@ Before reading the ReSTIR papers, it helps to know the topics covered in
 
 ### 1. Foundations
 
-Start with the short guide in [docs/foundations.md](docs/foundations.md). The
+Start with the short guide in [notes/foundations.md](notes/foundations.md). The
 two most important statistical ideas are:
 
 - **Resampled Importance Sampling (RIS)**: draw a small candidate set, weight the
