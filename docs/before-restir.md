@@ -8,7 +8,12 @@ understand what problem ReSTIR is trying to solve.
 
 ### [The Rendering Equation](https://dl.acm.org/doi/10.1145/15886.15902)
 
-Recommended reading: [PBRT v4: The Light Transport Equation](https://pbr-book.org/4ed/Light_Transport_I_Surface_Reflection/The_Light_Transport_Equation)
+Recommended resources:
+
+- [PBRT v4: The Light Transport Equation](https://pbr-book.org/4ed/Light_Transport_I_Surface_Reflection/The_Light_Transport_Equation)
+  - Best serious introduction before reading the original paper.
+- [The Rendering Equation](https://dl.acm.org/doi/10.1145/15886.15902)
+  - Original classic paper; read after a modern explanation.
 
 The rendering equation describes outgoing light at a surface as emitted light
 plus reflected incoming light from many directions. In practice, it explains why
@@ -21,7 +26,10 @@ from the image it estimates.
 
 ### Monte Carlo Integration
 
-Recommended reading: [PBRT v4: Monte Carlo Integration](https://pbr-book.org/4ed/Monte_Carlo_Integration)
+Recommended resources:
+
+- [PBRT v4: Monte Carlo Integration](https://pbr-book.org/4ed/Monte_Carlo_Integration)
+  - Best serious rendering reference.
 
 Monte Carlo integration estimates a difficult integral with random samples.
 Rendering uses it because the full set of light paths is too large to evaluate
@@ -32,7 +40,10 @@ Monte Carlo estimation; it tries to make each sample more useful.
 
 ### Importance Sampling And PDFs
 
-Recommended introductory YouTube video: [Importance Sampling](https://youtu.be/C3p2wI4RAi8?si=ppts6TSnLi3-EzAG)
+Recommended resources:
+
+- [Importance Sampling](https://youtu.be/C3p2wI4RAi8)
+  - Introductory video for the core intuition.
 
 Importance sampling chooses samples from distributions that are likely to
 contribute more to the result. A probability density function, or PDF, describes
@@ -44,7 +55,12 @@ how samples were generated.
 
 ### Multiple Importance Sampling
 
-Recommended YouTube videos: [Multiple Importance Sampling](https://youtu.be/2S6imDIiFTM?si=tnRdkZ9fcCUOacKm), [Continuous Multiple Importance Sampling (SIGGRAPH 2020 Presentation)](https://youtu.be/dxFSwplfdpk?si=Qdn7x4HaFIDq4Mur)
+Recommended resources:
+
+- [Multiple Importance Sampling](https://youtu.be/2S6imDIiFTM)
+  - Focused video introduction to MIS.
+- [Continuous Multiple Importance Sampling](https://youtu.be/dxFSwplfdpk)
+  - SIGGRAPH 2020 presentation for a more advanced variant.
 
 Multiple importance sampling, or MIS, combines samples from different strategies
 while reducing variance. In rendering, common strategies include sampling a
@@ -55,6 +71,11 @@ frames, or domains. MIS intuition helps explain why weighting and balance matter
 
 ### Path Tracing And Next-Event Estimation
 
+Recommended resources:
+
+- [Next Event Estimation](https://youtu.be/FU1dbi827LY)
+  - Focused video explanation of explicit light sampling.
+
 Path tracing estimates light transport by tracing random paths through the
 scene. Next-event estimation directly samples light sources at a surface point,
 which is especially important for direct lighting.
@@ -63,6 +84,13 @@ Why it matters for ReSTIR: ReSTIR DI starts from direct-lighting samples, while
 ReSTIR GI and ReSTIR PT extend the idea to paths and indirect lighting.
 
 ### Temporal Reprojection
+
+Recommended resources:
+
+- [Temporal AA and the Quest for the Holy Trail](https://www.elopezr.com/temporal-aa-and-the-quest-for-the-holy-trail/)
+  - Practical written explanation of temporal accumulation and history issues.
+- [Tech Focus: TAA - Blessing Or Curse? Temporal Anti-Aliasing Deep Dive](https://youtu.be/WG8w9Yg5B3g)
+  - Visual overview of temporal anti-aliasing tradeoffs and artifacts.
 
 Temporal reprojection maps information from a previous frame to the current
 frame using motion, depth, and surface information. It is widely used in
